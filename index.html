@@ -282,6 +282,19 @@
     font-family:'JetBrains Mono', monospace;
   }
 
+
+  /* ---------- PROFILE PHOTO ---------- */
+  .profile-photo{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    object-position:center;
+    border:3px solid var(--cyan);
+    box-shadow:0 0 0 8px rgba(79,209,197,0.08);
+    margin:0 auto 28px;
+  }
+
   /* Signature: data pipeline SVG */
   .hero-visual{
     position:relative;
@@ -787,7 +800,7 @@
   <div class="wrap hero-grid">
     <div>
       <div class="hero-kicker"><span class="dot-pulse"></span>AVAILABLE FOR NEW OPPORTUNITIES</div>
-      <h1>[Your Name]<br>Data Analyst &amp; <span class="accent">Data Engineer</span>, Technical Trainer</h1>
+      <h1>[Vikash Kumar]<br>Data Analyst &amp; <span class="accent">Data Engineer</span>, Technical Trainer</h1>
       <p class="hero-sub">I turn messy, disconnected data into governed pipelines, clear dashboards, and decisions people trust — then teach others to do the same in Python, SQL, and Power BI.</p>
       <div class="hero-ctas">
         <a href="#projects" class="btn btn-primary">View My Work →</a>
@@ -800,8 +813,9 @@
       </div>
     </div>
 
-    <div class="hero-visual" aria-hidden="true">
-      <svg viewBox="0 0 400 400">
+    <div class="hero-visual">
+      <img src="profile.png" alt="Vikash Kumar" class="profile-photo">
+      <svg viewBox="0 0 400 400" aria-hidden="true">
         <path class="pipeline-line" d="M60,80 C140,80 120,180 200,180" />
         <path class="pipeline-line" d="M60,200 C140,200 120,180 200,180" />
         <path class="pipeline-line" d="M60,320 C140,320 120,220 200,220" />
